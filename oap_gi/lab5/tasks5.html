@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base target="menuFrame">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../main.css">
+	<script type="text/javascript" src="../main.js"></script>
+<title>Задание к ПР 5</title></head>
+
+<body onLoad="showVariantForm();">
+	<noscript><div><h6>Отключен JavaScript!</h6>Для корректного отображения страницы <a href="../../enableJS.html" target="_blank">включите JavaScript</a></div></noscript>
+<!-- Ссылка на теорию задаётся в атрибуте "link" в теге с id="hint".
+     Если теории нет, то оставить без изменения -->
+
+	<div id="hint" link="theory5.html">
+		<div>
+<!-- Номер семестра и работы -->
+
+			Первый семестр. Практическая работа № 5
+
+<!-- /Номер семестра и работы -->
+		</div>
+		<span></span>
+	</div>
+	<div id="variantForm"></div>
+	<div id="contentTask">
+<!-- Текст -->
+
+		<h1>Разработка алгоритма, составление, отладка и выполнение программы линейного вычислительного процесса</h1>
+		<p>Выполнить задания (см. ниже). Файлы с выполненными заданиями сохранять в личной папке в каталоге <strong>pr5</strong>. Имена файлов указаны в заданиях (см. ниже).
+		
+		<p>Оформить в <em>MS Word</em> отчет о практической работе, включающий: 
+		<ul>
+		<li><strong>тему практической работы (ПР)</strong> </li>
+		<li><strong>цель работы</strong></li>
+		<li><strong>задание 1 на ПР</strong></li>
+		<li><strong>листинг программы задания 1</strong> (стиль <code>Программный код</code> со шрифтом <code>Courier New</code>)</li>
+		<li><strong>результат выполнения программы задания 1</strong> (скриншот, аккуратно обрезанный)</li>
+		<p>... и так для каждого задания ...</p>
+		<li><strong>контрольные вопросы и ответы на них</strong></<li>
+		<li><strong>выводы по работе</strong> </li>
+		</ul>
+		Для задания 1 также представить блок-схему алгоритма.
+		</p>
+		<p><strong>Отчет распечатать и представить при защите ПР.</strong></p>
+		<h5>Задания</h5>
+		
+			<strong>Задание 1. </strong>Составитить блок-схему алгоритма и линейную программу, которая позволяет ввести значения переменных и вычислить указанные выражения по формулам.
+			<p><span class="variants">
+							<span><img src="files/image002.gif"></span>
+							<span><img src="files/image004.gif"></span>
+							<span><img src="files/image006.gif"></span>
+							<span><img src="files/image008.gif"></span>
+							<span><img src="files/image010.gif"></span>
+							<span><img src="files/image012.gif"></span>
+							<span><img src="files/image014.gif"></span>
+							<span><img src="files/image016.gif"></span>
+							<span><img src="files/image018.gif"></span>
+							<span><img src="files/image020.gif"></span>
+							<span><img src="files/image022.gif"></span>
+							<span><img src="files/image024.gif"></span>
+							<span><img src="files/image026.gif"></span>
+							<span><img src="files/image028.gif"></span>
+							<span><img src="files/image030.gif"></span></span></p>
+			<p><span class="variants">
+							<span><img src="files/image032.gif"></span>
+							<span><img src="files/image034.gif"></span>
+							<span><img src="files/image036.gif"></span>
+							<span><img src="files/image038.gif"></span>
+							<span><img src="files/image040.gif"></span>
+							<span><img src="files/image042.gif"></span>
+							<span><img src="files/image044.gif"></span>
+							<span><img src="files/image046.gif"></span>
+							<span><img src="files/image048.gif"></span>
+							<span><img src="files/image050.gif"></span>
+							<span><img src="files/image052.gif"></span>
+							<span><img src="files/image054.gif"></span>
+							<span><img src="files/image056.gif"></span>
+							<span><img src="files/image058.gif"></span>
+							<span><img src="files/image060.gif"></span>
+							<span><img src="files/image062.gif"></span>
+							<span><img src="files/image064.gif"></span>
+							<span><img src="files/image066.gif"></span>
+							<span><img src="files/image068.gif"></span>
+							<span><img src="files/image070.gif"></span>
+							<span><img src="files/image072.gif"></span>
+							<span><img src="files/image074.gif"></span>
+							<span><img src="files/image076.gif"></span></span></p>
+			
+			<strong>Задание 2.</strong> Написать программу, которая запрашивает <span class="variants">
+					<span>7</span><span>8</span><span>9</span><span>10</span><span>7</span><span>7</span><span>7</span><span>7</span><span>8</span><span>9</span><span>7</span><span>10</span><span>8</span><span>8</span>
+
+				</span>целых чисел в следующем формате:
+				<p class="padLeft30"><span class="variants">
+					<span>34 78 27 34 98 34 93</span><span>34 78 27 34 98 34 93 27</span><span>34 78 27 34 98 34 93 27 38</span><span>34 78 27 34 98 34 93 27 19 37</span><span>34 97 52 16 39 66 45</span><span>77 38 43 12 20 62 95</span><span>41 30 79 93 35 45 34</span><span>36 52 74 23 97 50 70</span><span>43 7 17 34 8 34 3 12</span><span>1 17 2 34 81 34 9 2 15</span><span>34 8 5 13 8 13 6</span><span>6 43 6 41 1 2 13 3 24 83</span><span>34 78 27 34 98 34 93 27</span><span>34 78 27 34 98 34 93 27</span>
+
+				</span></p>
+				Для считывания используется единственная функция <code>scanf()</code>. При этом считываются<span class="variants">
+					<span>2-е, 3-е, 4-е и 6-е</span><span>1-е, 3-е, 6-е и 8-е</span><span>3-е, 5-е, 6-е и 9-е</span><span>1-е, 5-е, 7-е и 9-е</span><span>1-е, 2-е, 4-е и 7-е</span><span>2-е, 3-е, 5-е и 7-е</span><span>1-е, 4-е, 6-е и 7-е</span><span>1-е, 2-е, 5-е и 6-е</span><span>1-е, 3-е, 5-е и 6-е</span><span>2-е, 4-е, 6-е и 9-е</span><span>1-е, 3-е, 4-е и 7-е</span><span>3-е, 5-е, 8-е и 9-е</span><span>2-е, 4-е, 5-е и 7-е</span><span>2-е, 4-е, 5-е и 7-е</span>
+
+				</span>значения и соответственно записываются в переменные<code><b><span class="variants">
+					<span>a, b, c, d</span><span>z, y, x, f</span><span>pp, g, m1, d</span><span>dd, v, a, w</span><span>a, b, c, d</span><span>a, b, c, d</span><span>a, b, c, d</span><span>a, b, c, d</span><span>oh, co, m, u</span><span>u, lo, os, er</span><span>co, me, on, u</span><span>i, ba, d, s</span><span>sq, h, line, nm</span><span>p1, d_a, p_a, w</span>.
+
+				</span></b></code><br>
+				Определить с помощью возвращаемого значения функции <code>scanf()</code> и вывести на экран количество успешно считанных значений.<br>
+				<p>Вывести на экран с помощью функции <code>printf()</code> значение переменной<code><b><span class="variants">
+					<span>a</span><span>z</span><span>pp</span><span>dd</span><span>a</span><span>a</span><span>a</span><span>a</span><span>oh</span><span>u</span><span>co</span><span>i</span><span>sq</span><span>p1</span>
+
+				</span></b></code>три раза: до применения, с применением операции <b><i>префиксной формы инкремента</i></b> и после нее.<br>
+				Вывести на экран с помощью функции <code>printf()</code> значение переменной<code><b><span class="variants">
+					<span>b</span><span>y</span><span>g</span><span>v</span><span>b</span><span>b</span><span>b</span><span>b</span><span>co</span><span>lo</span><span>me</span><span>ba</span><span>h</span><span>d_a</span>
+
+				</span></b></code>три раза: до применения, с применением операции <b><i>постфиксной формы инкремента</i></b> и после нее.<br>Вывести на экран с помощью функции <code>printf()</code> значение переменной<code><b><span class="variants">
+					<span>c</span><span>x</span><span>m1</span><span>a</span><span>c</span><span>c</span><span>c</span><span>c</span><span>m</span><span>os</span><span>on</span><span>d</span><span>line</span><span>p_a</span>
+
+				</span></b></code>три раза: до применения, с применением операции <b><i>префиксной формы декремента</i></b> и после нее.<br>
+				Вывести на экран с помощью функции <code>printf()</code> значение переменной<code><b><span class="variants">
+					<span>d</span><span>f</span><span>d</span><span>w</span><span>d</span><span>d</span><span>d</span><span>d</span><span>u</span><span>er</span><span>u</span><span>s</span><span>nm</span><span>w</span>
+
+				</span></b></code>три раза: до применения, с применением операции <b><i>постфиксной формы декремента</i></b> и после нее.</p>
+<strong>Задание 3.</strong> 
+				Написать программу, которая запрашивает<span class="variants">
+					<span>7</span><span>8</span><span>9</span><span>10</span><span>7</span><span>7</span><span>7</span><span>7</span><span>7</span><span>8</span><span>9</span><span>7</span><span>9</span><span>9</span>
+
+				</span>целых чисел в следующем формате:
+				<p class="padLeft30"><span class="variants">
+					<span>34%78 *27 34:98:34# 93</span><span>34-78 (27) 34^98*34 93-12</span><span>34+78*27 "34" 98$34$93 23#12</span><span>34% 78!27 ^34#98#34 93?12 19!23</span><span>34%97 *52 16:39:66#45</span><span>77 38 %43*12#20:62, 95</span><span>41# 30:79:93 35 *45% 34</span><span>36%52* 74^23 :97 * 50#70</span><span>34!7@ 27;3 98:34 #9</span><span>34 %8*27;34 8:34# 3!6</span><span>2 14 8* 27 4!98@4 #93 $3</span><span>4 78 !7@34$8;34# 19</span><span>34 <78> 27;34 "98" 34*93\12/19</span><span>34 <78> 27;34 "98" 34*93\12/19</span>
+
+				</span></p>
+				Для считывания используется единственная функция <code>scanf()</code>. При этом считываются<span class="variants">
+					<span>1-е, 3-е, 6-е и 7-е</span><span>4-е, 5-е, 6-е и 8-е</span><span>2-е, 6-е, 8-е, 9-е</span><span>3-е, 4-е, 6-е, 10-е</span><span>1-е, 2-е, 4-е и 7-е</span><span>2-е, 3-е, 5-е и 7-е</span><span>1-е, 4-е, 6-е и 7-е</span><span>1-е, 2-е, 5-е и 6-е</span><span>1-е, 2-е, 4-е и 7-е</span><span>2-е, 4-е, 6-е и 8-е</span><span>1-е, 3-е, 5-е и 8-е</span><span>3-е, 4-е, 6-е и 7-е</span><span>1-е, 3-е, 7-е, 9-е</span><span>1-е, 3-е, 7-е, 9-е</span>
+
+				</span>значения и соответственно записываются в переменные<code><b><span class="variants">
+					<span>first, u, v, f1</span><span>pr, gu2, gu3, s</span><span>wg, k_d, w, m1</span><span>p, j_1, j_2, pw</span><span>x, sec, v1, f</span><span>x, y, third, z</span><span>q, w, v, fourth</span><span>ne, n, noi, u_u</span><span>co, me, h, ere</span><span>se, con, d, u</span><span>ho, wmuc, h, is</span><span>oh, i, di, dit</span><span>fw, mt, n, r2</span><span>nn, mm, kh, s</span>.
+
+				</b></code></span><br>
+				Определить с помощью возвращаемого значения функции <code>scanf()</code> и вывести на экран количество успешно считанных значений.<br>Вывести значения всех считанных переменных на экран.<br>
+				С помощью сокращенной операции<span class="variants">
+					<span>сложения к переменной</span><span>вычитания из переменной</span><span>умножения переменную</span><span>вычитания из переменной</span><span>сложения к переменной</span><span>вычитания из переменной</span><span>умножения переменную</span><span>деления переменную</span><span>вычитания из переменной</span><span>сложения к переменной</span><span>умножения переменную</span><span>вычитания из переменной</span><span>умножения переменную</span><span>сложения к переменной</span>
+
+				</span><code><b><span class="variants">
+					<span>first</span><span>gu2</span><span>wg</span><span>pw</span><span>x</span><span>x</span><span>q</span><span>ne</span><span>me</span><span>se</span><span>ho</span><span>i</span><span>mt</span><span>nn</span>
+
+				</span></b></code><span class="variants">
+					<span>прибавить значение</span><span>вычесть значение</span><span>перемножить со значением</span><span>вычесть значение</span><span>прибавить значение</span><span>вычесть значение</span><span>умножить на значение</span><span>разделить на значение</span><span>вычесть значение</span><span>прибавить значение</span><span>умножить на значение</span><span>вычесть значение</span><span>умножить на значение</span><span>прибавить значение</span>
+
+				</span>переменной<code><b><span class="variants">
+					<span>v</span><span>gu3</span><span>w</span><span>p</span><span>v1</span><span>third</span><span>v</span><span>noi</span><span>h</span><span>d</span><span>wmuc</span><span>di</span><span>n</span><span>kh</span>.
+
+				</span></b></code><br>
+				Поменять местами значения переменных<code><b><span class="variants">
+					<span>u</span><span>pr</span><span>k_d</span><span>j_1</span><span>sec</span><span>y</span><span>w</span><span>n</span><span>co</span><span>con</span><span>is</span><span>dit</span><span>fw</span><span>mm</span>
+
+				</span></b></code>и<code><b><span class="variants">
+					<span>f1</span><span>s</span><span>m1</span><span> j_2</span><span>f</span><span>z</span><span>fourth</span><span>u_u</span><span>ere</span><span>u</span><span>h</span><span>oh</span><span>r2</span><span>s</span>.
+
+				</span></b></code><br>Вывести новые значения переменных на экран.</p>
+			
+
+				Вы полностью закончили практическую работу № 5? И показали выполненные задания преподавателю?<br>
+				Поздравляю! У Вас есть шанс успеть оформить работу прямо сейчас, а дома только распечатать. Приступайте!
+		</ol>
+		<h5>Контрольные вопросы</h5>
+		<ol>
+		<li>Способы описания алгоритмов</li>
+<li>Графический способ описания алгоритмов</li>
+<li>Основные символы данных</li>
+<li>Блок, используемый для вывода информации в документ</li>
+<li>Символ процесса</li>
+<li>Как перенести часть блок-схемы на новую страницу?</li>
+<li>Спецификатор %p</li>
+<li>Спецификатор %n вывода данных</li>
+<li>Спецификатор %n ввода данных</li>
+<li>Использование набора сканируемых символов</li>
+		</ol>
+		<p><a href="theory5.html">Теория</a></p>
+
+<!-- /Текст -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1570182745 source:z:\ÎÀèÏ\zaytsev\pr4_3\task4_3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

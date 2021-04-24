@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base target="menuFrame">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../main.css">
+	<script type="text/javascript" src="../main.js"></script>
+<title>Задание к ПР 4</title></head>
+
+<body onLoad="showVariantForm();">
+	<noscript><div><h6>Отключен JavaScript!</h6>Для корректного отображения страницы <a href="../../enableJS.html" target="_blank">включите JavaScript</a></div></noscript>
+<!-- Ссылка на теорию задаётся в атрибуте "link" в теге с id="hint".
+     Если теории нет, то оставить без изменения -->
+
+	<div id="hint" link="theory4.html">
+		<div>
+<!-- Номер семестра и работы -->
+
+			Первый семестр. Практическая работа № 4
+
+<!-- /Номер семестра и работы -->
+		</div>
+		<span></span>
+	</div>
+	<div id="variantForm"></div>
+	<div id="contentTask">
+<!-- Текст -->
+
+		<h1>Организация ввода/вывода данных. Форматированный ввод/вывод</h1>
+		<p>Выполнить задания (см. ниже). Файлы с выполненными заданиями сохранять в личной папке в каталоге <strong>pr4</strong>. Имена файлов указаны в заданиях (см. ниже).
+		
+		<p>Оформить в <em>MS Word</em> отчет о практической работе, включающий: 
+		<ul>
+		<li><strong>тему практической работы (ПР)</strong> </li>
+		<li><strong>цель работы</strong></li>
+		<li><strong>задание 1 на ПР</strong></li>
+		<li><strong>листинг программы задания 1</strong> (стиль <code>Программный код</code> со шрифтом <code>Courier New</code>)</li>
+		<li><strong>результат выполнения программы задания 1</strong> (скриншот, аккуратно обрезанный)</li>
+		<p>... и так для каждого задания ...</p>
+		<li><strong>контрольные вопросы и ответы на них</strong></<li>
+		<li><strong>выводы по работе</strong> </li>
+		</ul>
+		</p>
+		<p><strong>Отчет распечатать и представить при защите ПР.</strong></p>
+		<h5>Задания</h5>
+		<ol>
+			<strong>Задание 1. </strong>Составитить программу, которая выводит форматированный текст, представленный ниже (пробелы учитываются!). <pre class="padLeft30"><span class="variants"><span>"ABC"/\
+       50%
+'CBA'</span><span>"News"^
+50%
+   /CBA\</span><span>x,y,z   %50%
+/A\     "Z"</span><span>%"Time"% 34
+\\B//    ?</span><span>News     34%
+"\B/"    &</span><span>#Time#   83
+\"Date"/ 10%</span><span>15/60*100%=
+           25%
+"H"\</span><span>тип "int" 25
+\\B//     %%</span><span>"%"      \/\
+83       "$"</span><span>"C:\Windows\
+            system.ini"
+/30%</span><span>"\"      "/"
+#22      45%</span><span>\&/      \%/
+"abs"    45</span><span>printf("text\n");
+3/2=
+    50%</span><span>*/*      "\"
+56%      25</span><span>*\*      *%*
+20/5=    5
+"r"</span><span>scanf("%d%d",&a,&b);
+(\)
+   70</span></span></pre>
+		<ol>
+		<li>Проект сохранить с именем <code>task4_1</code> в папке <code>pr4_1</code>.</li>
+		<li>Выполнить программу и получить результат, исправив ошибки при их наличии</li>
+		</ol><br>
+			
+			<strong>Задание 2.</strong> Составить программу, в которой выводятся символы, коды которых равны
+				<ul>
+					<li>
+						<span class="variants">
+							<span>146, 107</span><span>43, 145</span><span>113, 56</span><span>70, 165</span><span>135, 103</span><span>124, 167</span><span>141, 103</span><span>141, 132</span><span>115, 147</span><span>173, 42</span><span>116, 62</span><span>146, 41</span><span>130, 145</span><span>117, 40</span><span>124, 134</span><span>130, 160</span>
+						</span>
+						в восьмеричной системе
+					</li>
+					<li>
+						<span class="variants">
+							<span>47, 84</span><span>50, 44</span><span>64, 94</span><span>119, 87</span><span>43, 119</span><span>90, 103</span><span>65, 61</span><span>123, 115</span><span>96, 90</span><span>93, 124</span><span>90, 42</span><span>52, 73</span><span>104, 32</span><span>58, 98</span><span>39, 117</span><span>69, 99</span>
+						</span>
+						в десятичной системе
+					</li>
+					<li>
+						<span class="variants">
+							<span>75, 27</span><span>62, 41</span><span>44, 3a</span><span>5f, 71</span><span>20, 61</span><span>74, 41</span><span>47, 43</span><span>76, 43</span><span>64, 2c</span><span>7d, 64</span><span>39, 22</span><span>7d, 32</span><span>76, 74</span><span>54, 55</span><span>6c, 41</span><span>68, 37</span>
+						</span>
+						в шестнадцатеричной системе
+					</li>
+				</ul>
+Добавить фрагмент, в котором вводится символ (буква) и выводится код символа нажатой клавиши.
+<p>Проект сохранить с именем <code>task4_2</code> в папке <code>pr4_2</code>.</p>
+<strong>Задание 3.</strong> Составить программу, которая позволяет вводить
+<span class="variants">
+<span> дату в формате dd-mm-yyyy</span>
+<span> дату в формате dd/mm/yyyy</span>
+<span> дату в формате mm/dd/yyyy</span>
+<span> дату в формате dd*mm*yyyy, где * - любой разделитель</span>
+<span> время в формате hh:mm:ss</span>
+<span> время в формате hh:mm</span>
+</span>,
+ а выводить в формате
+<span class="variants">
+<span> dd/mm/yyyy</span>
+<span> dd-mm-yyyy</span>
+<span> dd/mm/yyyy</span>
+<span> dd день mm месяц yyyy год</span>
+<span> hh ч mm мин ss с</span>
+<span> время в формате hh часов mm минут</span>
+</span>.<br>
+ Ввод выполнить в одном операторе <code>scanf()</code>, вывод - в одном операторе <code>printf()</code>. 
+<p>Проект сохранить с именем <code>task4_3</code> в папке <code>pr4_3</code>.</p>
+		
+<strong>Задание 4.</strong> 
+Написать программу на языке <code>С</code>, которая считывает с клавиатуры переменные следующих типов:
+				<div class="padLeft20"><table>
+					<tr><th>Имя</th><th>Тип</th></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>a</span><span>h1</span><span>tk</span><span>mi</span><span>a</span><span>a</span><span>a</span><span>a</span><span>j</span><span>u</span><span>i</span><span>op</span><span>zx</span><span>cld</span>
+
+					</span></b></code></td><td><code>long double</code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>b</span><span>z</span><span>ppp</span><span>prs</span><span>b</span><span>b</span><span>b2</span><span>b</span><span>ab</span><span>ps</span><span>f</span><span>z</span><span>zy</span><span>cd</span>
+
+					</span></b></code></td><td><code>double</code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>c</span><span>f</span><span>t_r</span><span>t</span><span>c</span><span>c1</span><span>c</span><span>cl</span><span>e</span><span>e</span><span>p</span><span>f</span><span>zz</span><span>cf</span>
+
+					</span></b></code></td><td><code>float</code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>d</span><span>a</span><span>x</span><span>i</span><span>d</span><span>d</span><span>d</span><span>d</span><span>dh</span><span>ab</span><span>op</span><span>i</span><span>p_1</span><span>t1</span>
+
+						</span></b></code></td><td><code><span class="variants">
+							<span>unsigned long long</span><span>long long</span><span>long long</span><span>long long</span><span>long long</span><span>long long</span><span>unsigned long long</span><span>long long</span><span>long long</span><span>long long</span><span>long long</span><span>long long</span><span>long long</span><span>long long</span>
+
+					</span></code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>e1</span><span>t3</span><span>c</span><span>www</span><span>e</span><span>ek</span><span>e</span><span>e</span><span>zx</span><span>j</span><span>hu</span><span>go</span><span>p_2</span><span>d1</span>
+
+						</span></b></code></td><td><code><span class="variants">
+							<span>long</span><span>long</span><span>long</span><span>long</span><span>long</span><span>long</span><span>long</span><span>long</span><span>unsigned long</span><span>unsigned long</span><span>unsigned long</span><span>unsigned long</span><span>unsigned long</span><span>unsigned long</span>
+
+					</span></code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>f</span><span>s2</span><span>pw</span><span>y1</span><span>f1</span><span>f</span><span>f</span><span>fq</span><span>k</span><span>t</span><span>t</span><span>hu</span><span>p_3</span><span>t2</span>
+
+						</span></b></code></td><td><code><span class="variants">
+							<span>int</span><span>int</span><span>int</span><span>int</span><span>unsigned</span><span>unsigned</span><span>unsigned</span><span>unsigned</span><span>int</span><span>int</span><span>int</span><span>int</span><span>unsigned</span><span>unsigned</span>
+
+					</span></code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>g</span><span>o7</span><span>f</span><span>k</span><span>g</span><span>g</span><span>g</span><span>g</span><span>t</span><span>f</span><span>ew</span><span>t</span><span>kk</span><span>d2</span>
+
+						</span></b></code></td><td><code><span class="variants">
+							<span>double</span><span>float</span><span>float</span><span>double</span><span>double</span><span>float</span><span>float</span><span>double</span><span>double</span><span>float</span><span>float</span><span>double</span><span>double</span><span>float</span>
+
+					</span></code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>h</span><span>ct</span><span>n</span><span>y2</span><span>h</span><span>h</span><span>h</span><span>h</span><span>f</span><span>dh</span><span>z</span><span>no</span><span>v</span><span>x</span>
+
+						</span></b></code></td><td><code><span class="variants">
+							<span>short</span><span>short</span><span>unsigned short</span><span>unsigned short</span><span>short</span><span>short</span><span>unsigned short</span><span>unsigned short</span><span>short</span><span>short</span><span>unsigned short</span><span>unsigned short</span><span>short</span><span>short</span>
+
+					</span></code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>pr</span><span>p</span><span>p1</span><span>r</span><span>pr</span><span>pr</span><span>pr</span><span>pr</span><span>aj</span><span>k</span><span>o</span><span>p</span><span>jk</span><span>xx</span>
+
+						</span></b></code></td><td><code><span class="variants">
+							<span>signed char</span><span>unsigned char</span><span>signed char</span><span>unsigned char</span><span>signed char</span><span>unsigned char</span><span>signed char</span><span>unsigned char</span><span>signed char</span><span>unsigned char</span><span>signed char</span><span>unsigned char</span><span>char</span><span>unsigned char</span>
+
+					</span></code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>sp</span><span>r</span><span>s</span><span>h</span><span>sp</span><span>sp</span><span>sp</span><span>sp</span><span>ps</span><span>aj</span><span>go</span><span>ew</span><span>cn</span><span>a_i</span>
+
+					</span></b></code></td><td><code>int</code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>t</span><span>u</span><span>lw</span><span>j</span><span>t</span><span>t</span><span>t</span><span>t</span><span>u</span><span>zx</span><span>no</span><span>o</span><span>r</span><span>b_i</span>
+
+					</span></b></code></td><td><code>int</code></td></tr>
+				</table></div>
+				<p>Вывести на экран переменные с заданной шириной поля и точностью в требуемой системе счисления</p>
+				<div class="padLeft20"><table>
+					<tr><th>Имя</th><th>Система счисления</th><th>Формат вывода</th><th>Ширина поля</th><th>Точность</th></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>a</span><span>h1</span><span>tk</span><span>mi</span><span>a</span><span>a</span><span>a</span><span>a</span><span>j</span><span>e</span><span>ew</span><span>op</span><span>zx</span><span>cd</span>
+
+						</span></b></code></td><td align="center">10</td><td>с плавающей точкой</td><td align="center"><span class="variants">
+							<span>8</span><span></span><span>11</span><span>9</span><span>9</span><span>8</span><span>6</span><span>10</span><span></span><span>6</span><span></span><span></span><span>10</span><span>7</span>
+
+						</span></td><td align="center"><span class="variants">
+							<span></span><span>4</span><span></span><span></span><span></span><span>0</span><span></span><span></span><span>2</span><span></span><span>4</span><span></span><span></span><span></span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>b</span><span>z</span><span>ppp</span><span>prs</span><span>b</span><span>b</span><span>b2</span><span>b</span><span>ab</span><span>ps</span><span>f</span><span>z</span><span>zy</span><span>cf</span>
+
+						</span></b></code></td><td align="center">10</td><td><span class="variants">
+							<span>экспоненциальный</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>экспоненциальный</span><span>экспоненциальный</span><span>экспоненциальный</span><span>экспоненциальный</span><span>экспоненциальный</span><span>автоматический выбор</span><span>экспоненциальный</span><span>автоматический выбор</span><span>экспоненциальный</span><span>экспоненциальный</span><span>экспоненциальный</span>
+
+						</span></td><td align="center"><span class="variants">
+							<span>7</span><span>9</span><span>10</span><span>11</span><span>6</span><span>8</span><span>9</span><span>7</span><span>8</span><span>7</span><span>7</span><span>9</span><span>10</span><span>7</span>
+
+						</span></td><td align="center"><span class="variants">
+							<span>2</span><span></span><span>3</span><span>5</span><span>3</span><span>3</span><span>2</span><span>1</span><span>3</span><span>3</span><span>3</span><span>4</span><span>3</span><span>2</span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>b</span><span>f</span><span>t_r</span><span>prs</span><span>b</span><span>b</span><span>b2</span><span>b</span><span>ab</span><span>ps</span><span>f</span><span>z</span><span>zy</span><span>cf</span>
+
+						</span></b></code></td><td align="center">10</td><td><span class="variants">
+							<span>с плавающей точкой</span><span>экспоненциальный</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>автоматический выбор</span><span>с плавающей точкой</span><span>автоматический выбор</span><span>с плавающей точкой</span><span>с плавающей точкой</span>
+
+						</span></td><td align="center"><span class="variants">
+							<span>7</span><span>6</span><span></span><span>11</span><span>6</span><span>8</span><span>9</span><span>7</span><span>8</span><span>7</span><span>7</span><span>9</span><span>10</span><span>7</span>
+
+						</span></td><td align="center"><span class="variants">
+							<span>2</span><span>2</span><span></span><span>5</span><span>3</span><span>3</span><span>2</span><span>1</span><span>3</span><span>3</span><span>3</span><span>4</span><span>3</span><span>2</span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>b</span><span>f</span><span>f</span><span>prs</span><span>b</span><span>b</span><span>b2</span><span>b</span><span>ab</span><span>ps</span><span>f</span><span>z</span><span>zy</span><span>cf</span>
+
+						</span></b></code></td><td align="center">10</td><td><span class="variants">
+							<span>автоматический выбор</span><span>с плавающей точкой</span><span>экспоненциальный</span><span>автоматический выбор</span><span>автоматический выбор</span><span>автоматический выбор</span><span>автоматический выбор</span><span>автоматический выбор</span><span>экспоненциальный</span><span>с плавающей точкой</span><span>экспоненциальный</span><span>с плавающей точкой</span><span>автоматический выбор</span><span>автоматический выбор</span>
+
+						</span></td><td align="center"><span class="variants">
+							<span>7</span><span>6</span><span>9</span><span>11</span><span>6</span><span>8</span><span>9</span><span>7</span><span>8</span><span>7</span><span>7</span><span>9</span><span>10</span><span>7</span>
+
+						</span></td><td align="center"><span class="variants">
+							<span>2</span><span>2</span><span>4</span><span>5</span><span>3</span><span>3</span><span>2</span><span>1</span><span>3</span><span>3</span><span>3</span><span>4</span><span>3</span><span>2</span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>c</span><span>f</span><span>f</span><span>t</span><span>c</span><span>c1</span><span>c</span><span>cl</span><span>e</span><span>u</span><span>i</span><span>f</span><span>zz</span><span>cld</span>
+
+						</span></b></code></td><td align="center">10</td><td><span class="variants">
+							<span>с плавающей точкой</span><span>автоматический выбор</span><span>автоматический выбор</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span><span>с плавающей точкой</span>
+
+						</span></td><td align="center"><span class="variants">
+							<span></span><span>6</span><span>9</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+
+						</span></td><td align="center"><span class="variants">
+							<span>1</span><span>2</span><span>4</span><span>3</span><span>2</span><span>2</span><span>3</span><span>3</span><span></span><span>2</span><span>2</span><span>2</span><span></span><span>8</span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>g</span><span>o7</span><span>f</span><span>k</span><span>g</span><span>g</span><span>g</span><span>g</span><span>t</span><span>f</span><span>p</span><span>t</span><span>kk</span><span>d2</span>
+
+						</span></b></code></td><td align="center">10</td><td>с плавающей точкой</td><td align="center"><span class="variants">
+							<span></span><span></span><span>9</span><span></span><span></span><span></span><span></span><span></span><span>6</span><span></span><span></span><span>8</span><span></span><span></span>
+
+						</span></td><td align="center"><span class="variants">
+							<span></span><span></span><span>4</span><span></span><span></span><span></span><span>0</span><span>0</span><span></span><span></span><span></span><span></span><span>6</span><span></span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>d</span><span>p</span><span>n</span><span>y2</span><span>f1</span><span>f</span><span>f</span><span>fq</span><span>zx</span><span>j</span><span>hu</span><span>go</span><span>p_2</span><span>t2</span>
+
+						</span></b></code></td><td align="center">16</td><td></td><td align="center"><span class="variants">
+							<span>8</span><span></span><span>4</span><span>7</span><span>6</span><span>8</span><span>7</span><span>5</span><span></span><span></span><span>7</span><span></span><span></span><span></span>
+
+					</span></td><td align="center"></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>d</span><span>p</span><span>n</span><span>y2</span><span>f1</span><span>f</span><span>f</span><span>fq</span><span>zx</span><span>j</span><span>hu</span><span>go</span><span>p_2</span><span>t2</span>
+
+						</span></b></code></td><td align="center">10</td><td></td><td align="center"><span class="variants">
+							<span></span><span>12</span><span>9</span><span></span><span></span><span></span><span></span><span></span><span>6</span><span>8</span><span></span><span></span><span></span><span></span>
+
+						</span></td><td align="center"><span class="variants">
+							<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>4</span><span>2</span><span></span><span></span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>d</span><span>p</span><span>n</span><span>y2</span><span>f1</span><span>f</span><span>f</span><span>fq</span><span>zx</span><span>j</span><span>hu</span><span>go</span><span>p_2</span><span>t2</span>
+
+						</span></b></code></td><td align="center">8</td><td></td><td align="center"><span class="variants">
+							<span>6</span><span></span><span></span><span></span><span>7</span><span>6</span><span>7</span><span>7</span><span>10</span><span>7</span><span></span><span>7</span><span>7</span><span>8</span>
+
+					</span></td><td align="center"></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>e1</span><span>a</span><span>x</span><span>i</span><span>e</span><span>ek</span><span>e</span><span>e</span><span>dh</span><span>ab</span><span>op</span><span>i</span><span>p_1</span><span>t1</span>
+
+						</span></b></code></td><td align="center">10</td><td></td><td align="center"><span class="variants">
+							<span>12</span><span>14</span><span>8</span><span></span><span>12</span><span>10</span><span>11</span><span>13</span><span></span><span>10</span><span></span><span></span><span></span><span></span>
+
+						</span></td><td align="center"><span class="variants">
+							<span>6</span><span>5</span><span>5</span><span></span><span>6</span><span>5</span><span>5</span><span>6</span><span></span><span>5</span><span></span><span></span><span></span><span></span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>f</span><span>t3</span><span>c</span><span>www</span><span>d</span><span>d</span><span>d</span><span>d</span><span>k</span><span>t</span><span>t</span><span>hi</span><span>p_3</span><span>d1</span>
+
+						</span></b></code></td><td align="center">10</td><td></td><td align="center"><span class="variants">
+							<span></span><span></span><span></span><span>9</span><span></span><span></span><span></span><span></span><span></span><span></span><span>11</span><span>11</span><span>9</span><span>5</span>
+
+						</span></td><td align="center"><span class="variants">
+							<span></span><span></span><span></span><span>5</span><span></span><span></span><span></span><span></span><span>5</span><span>4</span><span>3</span><span>4</span><span>5</span><span>5</span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>h</span><span>s2</span><span>pw</span><span>y1</span><span>h</span><span>h</span><span>h</span><span>h</span><span>f</span><span>dh</span><span>z</span><span>no</span><span>v</span><span>x</span>
+
+						</span></b></code></td><td align="center">10</td><td></td><td align="center"><span class="variants">
+							<span>7</span><span>8</span><span>10</span><span></span><span>6</span><span>6</span><span>4</span><span>6</span><span>9</span><span></span><span>6</span><span></span><span></span><span></span>
+
+						</span></td><td align="center"><span class="variants">
+							<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>3</span><span></span><span></span>
+
+					</span></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>pr</span><span>ct</span><span>p1</span><span>r</span><span>pr</span><span>pr</span><span>pr</span><span>pr</span><span>aj</span><span>k</span><span>o</span><span>p</span><span>jk</span><span>xx</span>
+
+						</span></b></code></td><td align="center">10</td><td></td><td align="center"><span class="variants">
+							<span></span><span></span><span></span><span>6</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>6</span><span>3</span>
+
+					</span></td><td align="center"></td></tr>
+				</table></div>
+				<p>Вывести на экран переменные с переменными шириной поля и точностью заданных в соответствующих переменных</p>
+				<div class="padLeft20"><table>
+					<tr><th>Имя</th><th>Система счисления</th><th>Формат вывода</th><th>Ширина поля</th><th>Точность</th></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>a</span><span>h1</span><span>tk</span><span>prs</span><span>a</span><span>a</span><span>a</span><span>a</span><span>ab</span><span>e</span><span>ew</span><span>z</span><span>zx</span><span>cd</span>
+
+						</span></b></code></td><td align="center">10</td><td>с плавающей точкой</td><td align="center"><code><b><span class="variants">
+							<span>sp</span><span>r</span><span>s</span><span>h</span><span>sp</span><span>sp</span><span>sp</span><span>sp</span><span>u</span><span></span><span>no</span><span>ew</span><span>cn</span><span>a_i</span>
+
+						</span></b></code></td><td align="center"><code><b><span class="variants">
+							<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>zx</span><span></span><span>o</span><span></span><span></span>
+
+					</span></b></code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>b</span><span>z</span><span>ppp</span><span>t</span><span>b</span><span>b</span><span>b2</span><span>b</span><span>e</span><span>ps</span><span>f</span><span>f</span><span>zy</span><span>cld</span>
+
+						</span></b></code></td><td align="center">10</td><td>с плавающей точкой</td><td align="center"><code><b><span class="variants">
+							<span>sp</span><span>r</span><span>s</span><span>h</span><span>sp</span><span>sp</span><span>sp</span><span>sp</span><span>u</span><span>aj</span><span>no</span><span></span><span>cn</span><span>a_i</span>
+
+						</span></b></code></td><td align="center"><code><b><span class="variants">
+							<span>t</span><span>u</span><span>lw</span><span>j</span><span>t</span><span>t</span><span>t</span><span>t</span><span>ps</span><span></span><span>go</span><span></span><span>r</span><span>b_i</span>
+
+					</span></b></code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>g</span><span>o7</span><span>t_r</span><span>mi</span><span>c</span><span>g</span><span>g</span><span>g</span><span>t</span><span>f</span><span>p</span><span>t</span><span>zz</span><span>cf</span>
+
+						</span></b></code></td><td align="center">10</td><td>с плавающей точкой</td><td align="center"><code><b><span class="variants">
+							<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>u</span><span>aj</span><span></span><span>ew</span><span></span><span></span>
+
+						</span></b></code></td><td align="center"><code><b><span class="variants">
+							<span>t</span><span>u</span><span>lw</span><span>j</span><span>t</span><span>t</span><span>t</span><span>t</span><span></span><span>zx</span><span>go</span><span></span><span>r</span><span>b_i</span>
+
+					</span></b></code></td></tr>
+					<tr><td align="center"><code><b><span class="variants">
+							<span>e1</span><span>a</span><span>c</span><span>y2</span><span>g</span><span>ek</span><span>e</span><span>e</span><span>k</span><span>t</span><span>op</span><span>i</span><span>kk</span><span>t2</span>
+
+						</span></b></code></td><td align="center">10</td><td></td><td align="center"><code><b><span class="variants">
+							<span>sp</span><span>r</span><span>s</span><span>h</span><span>sp</span><span>sp</span><span>sp</span><span>sp</span><span></span><span>aj</span><span>no</span><span>ew</span><span>cn</span><span>a_i</span>
+
+						</span></b></code></td><td align="center"><code><b><span class="variants">
+							<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>ps</span><span></span><span></span><span></span><span></span><span></span>
+
+					</span></b></code></td></tr>
+				</table></div>
+<p>Проект сохранить с именем <code>task4_4</code> в папке <code>pr4_4</code>.</p>
+		<br>
+
+				Вы полностью закончили практическую работу № 4? И показали выполненные задания преподавателю?<br>
+				Поздравляю! У Вас есть шанс успеть оформить работу прямо сейчас, а дома только распечатать. Приступайте!
+		</ol>
+		<h5>Контрольные вопросы</h5>
+		<ol>
+		<li>Для чего предназначена функция puts()?</li>
+		<li>Как вывести значение в <span class="variants">
+			<span>виде символа</span>
+			<span>в научном формате</span>
+<span>в виде десятичного числа без знака</span>
+<span>в виде восьмеричного числа без знака</span>
+<span>в виде шестнадцатеричного числа без знака</span>
+		</span>?</li>
+		<li>Как вывести символ %?</li>
+		<li><span class="variants">
+			<span>Как выполнить модификацию формата вывода по ширине</span>
+<span>Как выполнить модификацию формата вывода с заданной точностью для целых чисел</span>
+<span>Как выполнить модификацию формата вывода с заданной точностью для вещественных чисел</span>
+<span>Как выровнять выводимое значение по левому краю</span>
+<span>Как использовать универсальный модификатор *</span>
+		</span>?</li>
+<li>Что необходимо сделать в программе для вычисления выражений с математическими функциями?</li>		
+		<li><span class="variants">
+			<span>Перечислите и определите математические функции для округления.</span>
+<span>Перечислите и определите тригонометрические функции.</span>
+<span>Перечислите и определите математические функции для вычисления степеней и корней (радикалов).</span>
+<span>Перечислите и определите гиперболические функции.</span>
+<span>Перечислите и определите обратные тригонометрические функции.</span>
+<span>Перечислите и определите логарифмические функции.</span>
+		</span></li>
+<li>Функция scanf(). Общий формат использования.</li>	
+<li>Какие элементы сможет включать управляющая строка scanf()?</li>	
+<li>Разделители ввода и подавление присваивания при использовании функции scanf().</li>
+<li>Функция gets(). Очистка потока.</li>
+		</ol>
+		<p><a href="theory4.html">Теория</a></p>
+
+<!-- /Текст -->
+	</div>
+</body>
+</html>

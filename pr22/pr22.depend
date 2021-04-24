@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1587985389 source:d:\igor\pr22\main.cpp
+	<iostream>
+	<locale.h>
+	<fstream>
+	<math.h>
+	<cmath>
+

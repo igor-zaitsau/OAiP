@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1579464130 source:f:\ÎÀèÏ\pr15_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

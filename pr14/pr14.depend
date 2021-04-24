@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1584269046 source:f:\ÎÀèÏ\pr14\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<limits.h>
+	<locale.h>
+
